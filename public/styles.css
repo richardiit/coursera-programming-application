@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+}
+
+/* Form Container */
+form {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+}
+
+form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+  margin-top: 0;
+  color: #007BFF;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+}
+
+form input[type="text"] {
+  transition: border 0.3s ease;
+}
+
+form input[type="text"]:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Record List */
+#recordsList {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+}
+
+#recordsList div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  flex-direction: column;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+}
+
+#recordsList div:last-child {
+  border-bottom: none;
+}
+
+#recordsList span {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+}
+
+#recordsList button {
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+}
+
+#recordsList button.edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+#recordsList button.edit:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
+#recordsList button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+#recordsList button.delete:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Update Section */
+#updateRecordSection {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+}
+
+#updateRecordSection:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#updateRecordSection h2 {
+  margin-top: 0;
+  color: #007BFF;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#updateRecordSection button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+}
+
+#updateRecordSection button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#updateRecordSection button#cancelUpdate {
+  background-color: #6c757d;
+}
+
+#updateRecordSection button#cancelUpdate:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>My Web App</title>
+</head>
+<body>
+  <h2>Programming Application Foundations</h2>
+
+ <h1>Manage Records Web Application </h1>
+  
+  <!-- Form for creating a new record -->
+  <div>
+    <h2>Add New Record</h2>
+    <form id="addRecordForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="description" placeholder="Description" required>
+      <button type="submit">Add Record</button>
+    </form>
+  </div>
+
+  <!-- Display existing records and provide options to update or delete -->
+  <div>
+    <h2>Records List</h2>
+    <div id="recordsList"></div>
+  </div>
+
+  <!-- Form for updating an existing record -->
+  <div id="updateRecordSection">
+    <h2>Update Record</h2>
+    <form id="updateRecordForm">
+      <input type="hidden" id="updateId">
+      Name
+      <input type="text" id="updateName" placeholder="Name" required>
+      Description
+      <input type="text" id="updateDescription" placeholder="Description" required>
+      <button type="submit">Update Record</button>
+      <button type="button" id="cancelUpdate">Cancel</button>
+    </form>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
